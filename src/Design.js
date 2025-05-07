@@ -68,8 +68,8 @@ export const CarouselSection = styled.section`
 
 export const CarouselImage = styled.img`
   border-radius: 0.5rem;
-  width: 20rem;
-  height: 10rem;
+  width: 70rem;
+  height: 30rem;
   object-fit: cover;
 `;
 
@@ -104,6 +104,7 @@ export const ServicesGrid = styled.div`
   width: 100%;
   text-align: center;
   color: #831843;
+  align-items: stretch;
 `;
 
 export const Service = styled.div`
@@ -254,5 +255,87 @@ export const MobileMenuButton = styled.button`
 
   @media (max-width: 640px) {
     display: block;
+  }
+`;
+// Service Page Flip Card Styles
+export const PageContainer = styled.div`
+  padding: 2rem 1rem;
+  background-color: #f9a8d4;
+`;
+
+export const ServicesContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+`;
+
+export const FlipContainer = styled.div`
+  perspective: 1000px;
+`;
+
+export const FlipCard = styled.div`
+  position: relative;
+  width: 100%;
+  height: 320px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  transform: ${({ flipped }) =>
+    flipped ? "rotateY(180deg)" : "rotateY(0deg)"};
+`;
+
+export const CardFront = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fbcfe8;
+  color: #831843;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+`;
+
+export const CardBack = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f472b6;
+  color: #fce7f3;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+`;
+
+export const ServiceImage = styled.img`
+  border-radius: 0.75rem;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+`;
+export const ArrowButton = styled.button`
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #831843;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #f472b6;
+  }
+
+  &:focus {
+    outline: none;
   }
 `;
