@@ -35,7 +35,14 @@ import {
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import Services from "./Services";
 import Appointment from "./Appointments";
-import haircolor from "./Pictures/Hair Color.jpg";
+import hairColor from "./Pictures/HairColor.jpg";
+import eyelash from "./Pictures/eyelash.jpg";
+import nailExtension from "./Pictures/nailextension.jpg";
+import haircut from "./Pictures/haircut.jpg";
+import pedicure from "./Pictures/pedicure.jpg";
+import nails from "./Pictures/nails.jpg";
+import eyelash2 from "./Pictures/eyelash2.jpg";
+import nails2 from "./Pictures/nails2.jpg";
 
 const carouselImages = [
   {
@@ -49,23 +56,23 @@ const carouselImages = [
 ];
 
 const serviceItems = [
-  ["a934c902-36c1-4348-8f9d-4ff8b3201c53", "Haircut"],
-  ["bcc8f246-c4e1-40f1-df07-c0dd3366699c", "Hair Treatment"],
-  ["543e49c1-e152-4482-f673-c04b09225b4b", "Hair Color"],
-  ["94ccd3f2-31ca-4515-1a2b-2972a5d928f7", "Make up"],
-  ["3469d7a8-dee4-4b3a-c482-be05ae6133f1", "Nail Extension"],
-  ["5e77f881-92aa-4a0b-96e9-c7d3b4be0130", "Eyelash"],
+  [haircut, "Haircut"],
+  [pedicure, "Pedicure"],
+  [hairColor, "Hair Color"],
+  [nails, "Nails"],
+  [nailExtension, "Nail Extension"],
+  [eyelash, "Eyelash"],
 ];
 
 const thumbImages = [
-  "f09d935c-7c5c-4cbe-5e96-5ec04eaa83ae",
-  "061c9c08-1e2e-470d-8b69-96f6906571e5",
-  "be59b86a-bb6f-4e29-8dc6-146593340790",
-  "a8e86118-b9bc-4572-518d-0703867ee35a",
-  "c3b4433e-17a8-4dd8-02d0-abbefe04c7ef",
-  "92bd4224-9dbe-4a97-b457-c6184c9ff40d",
-  "a161669e-7554-4afc-27d2-2110549c1a62",
-  "057ef0d1-8b4b-4de2-0a9e-14e3a9779c80",
+  pedicure,
+  nails,
+  hairColor,
+  haircut,
+  nailExtension,
+  eyelash,
+  eyelash2,
+  nails2,
 ];
 
 export default function App() {
@@ -315,7 +322,7 @@ export default function App() {
               <ServicesSection>
                 <SectionTitle>SERVICE WE OFFER</SectionTitle>
                 <ServicesGrid>
-                  {serviceItems.map(([id, label], index) => (
+                  {serviceItems.map(([imgSrc, label], index) => (
                     <Service key={index}>
                       <Link
                         to="/appointment"
@@ -323,10 +330,7 @@ export default function App() {
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
                         <ServiceIconWrapper>
-                          <ServiceIcon
-                            src={`https://storage.googleapis.com/a1aa/image/${id}.jpg`}
-                            alt={label}
-                          />
+                          <ServiceIcon src={imgSrc} alt={label} />
                         </ServiceIconWrapper>
                         <ServiceLabel>{label}</ServiceLabel>
                       </Link>
@@ -335,12 +339,8 @@ export default function App() {
                 </ServicesGrid>
 
                 <ImageGrid>
-                  {thumbImages.map((id, i) => (
-                    <ThumbImage
-                      key={i}
-                      src={`https://storage.googleapis.com/a1aa/image/${id}.jpg`}
-                      alt={`Gallery ${i + 1}`}
-                    />
+                  {thumbImages.map((img, i) => (
+                    <ThumbImage key={i} src={img} alt={`Gallery ${i + 1}`} />
                   ))}
                 </ImageGrid>
               </ServicesSection>

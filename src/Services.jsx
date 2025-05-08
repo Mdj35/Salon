@@ -271,37 +271,6 @@ const servicesData = {
       alt: "Relaxer hair treatment",
       text: "Relaxer Treatment",
     },
-
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/5645cfd4-ff6e-43b8-5d5b-4c02fded1b92.jpg",
-      alt: "Hair coloring",
-      text: "Coloring",
-    },
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/f8284fe3-d537-4937-b4e0-eab78b79ecf9.jpg",
-      alt: "Color Correction",
-      text: "Color Correction",
-    },
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/d0c1711b-72b2-4d77-b08a-03d3da883993.jpg",
-      alt: "Balayage",
-      text: "Balayage",
-    },
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/1a306682-fc66-4e5d-891f-bc1e2722a27c.jpg",
-      alt: "Ombre coloring",
-      text: "Ombre",
-    },
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/1f362d62-3fd6-4935-8307-b1d30c6c9d0d.jpg",
-      alt: "Highlights",
-      text: "Highlights",
-    },
   ],
   coloring: [
     {
