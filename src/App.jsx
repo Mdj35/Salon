@@ -35,6 +35,7 @@ import {
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import Services from "./Services";
 import Appointment from "./Appointments";
+import haircolor from "./Pictures/Hair Color.jpg";
 
 const carouselImages = [
   {
