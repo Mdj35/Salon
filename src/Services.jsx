@@ -273,99 +273,63 @@ const servicesData = {
     },
   ],
   coloring: [
+    // ✅ keep only this block, remove any duplicates
     {
       image:
-        "https://storage.googleapis.com/a1aa/image/5645cfd4-ff6e-43b8-5d5b-4c02fded1b92.jpg",
+        "https://blog.wella.com/sites/default/files/small-image/wellaproblogbrownhaircolorsupdateimage19_1.jpg",
       alt: "Hair coloring",
       text: "Coloring",
     },
     {
       image:
-        "https://storage.googleapis.com/a1aa/image/f8284fe3-d537-4937-b4e0-eab78b79ecf9.jpg",
+        "https://blog.wella.com/sites/default/files/big-image/how-you-do-perfect-hair-color-correction-9dc06819.png",
       alt: "Color correction",
       text: "Color Correction",
     },
     {
       image:
-        "https://storage.googleapis.com/a1aa/image/d0c1711b-72b2-4d77-b08a-03d3da883993.jpg",
+        "https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2015/08/7-long-caramel-balayage-for-brunettes.jpg?resize=750%2C937&ssl=1",
       alt: "Balayage",
       text: "Balayage",
     },
     {
       image:
-        "https://storage.googleapis.com/a1aa/image/1a306682-fc66-4e5d-891f-bc1e2722a27c.jpg",
+        "https://sinimangatt.com/cdn/shop/articles/Ombre_Blog_Sinima_Salon_1600x.png?v=1600758903",
       alt: "Ombre coloring",
       text: "Ombre",
     },
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/1f362d62-3fd6-4935-8307-b1d30c6c9d0d.jpg",
-      alt: "Highlights",
-      text: "Highlights",
-    },
   ],
   hairRemoval: [
+    // ✅ leave this as-is
     {
       image:
-        "https://storage.googleapis.com/a1aa/image/f697e9b1-c720-48d2-7487-e5ac6ea8f17c.jpg",
+        "https://www.colairbeautylounge.com/wp-content/uploads/2024/02/mens-facial-hair-removal-guide-colair-beauty-lounge-6.jpg",
       alt: "Facial Hair Removal",
       text: "Facial Hair Removal",
     },
     {
       image:
-        "https://storage.googleapis.com/a1aa/image/9b7a8e7f-2ad9-40fe-8666-e3edbc6d55ac.jpg",
+        "https://www.sctimes.com/gcdn/presto/2023/08/03/PSTC/67090709-70cc-4d72-81f4-69e21f4380be-Picture1.jpg",
       alt: "Laser Hair Removal",
       text: "Laser Hair Removal",
     },
     {
       image:
-        "https://storage.googleapis.com/a1aa/image/caa88cf1-d6e9-4558-91b4-11013da2d0c0.jpg",
+        "https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322090/woman-having-laser-hair-removal-on-her-armpit.jpg",
       alt: "Underarm Hair Removal",
       text: "Underarm Hair Removal",
     },
     {
       image:
-        "https://storage.googleapis.com/a1aa/image/9b62cc9e-dfdf-4d57-b5a6-e1bc926e7a92.jpg",
+        "https://allurebodybar.com/wp-content/uploads/2024/01/mud-treatments-spa-1-scaled.jpg",
       alt: "Full Body Waxing",
       text: "Full Body Waxing",
     },
     {
       image:
-        "https://storage.googleapis.com/a1aa/image/cc2333b7-c826-4d2c-941d-bf9d1f1078fe.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtI8aepHR8lgZGgfH516Cu2KLl9UPLDuKfmQ&s",
       alt: "Bikini Waxing",
       text: "Bikini Waxing",
-    },
-  ],
-  coloring: [
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/5645cfd4-ff6e-43b8-5d5b-4c02fded1b92.jpg",
-      alt: "Hair coloring",
-      text: "Coloring",
-    },
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/f8284fe3-d537-4937-b4e0-eab78b79ecf9.jpg",
-      alt: "Color correction",
-      text: "Color Correction",
-    },
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/d0c1711b-72b2-4d77-b08a-03d3da883993.jpg",
-      alt: "Balayage",
-      text: "Balayage",
-    },
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/1a306682-fc66-4e5d-891f-bc1e2722a27c.jpg",
-      alt: "Ombre coloring",
-      text: "Ombre",
-    },
-    {
-      image:
-        "https://storage.googleapis.com/a1aa/image/1f362d62-3fd6-4935-8307-b1d30c6c9d0d.jpg",
-      alt: "Highlights",
-      text: "Highlights",
     },
   ],
 };
